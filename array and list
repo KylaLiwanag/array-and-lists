@@ -1,0 +1,97 @@
+print("Programmed by: Kyla Camille A. Liwanag")
+print("")
+
+print("Array: [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]")
+print("Options:")
+print("1. Add an element")
+print("2. Insert an element")
+print("3. Modify an element")
+print("4. Delete an element")
+print("5. Arrange in ascending order")
+print("6. Arrange in descending order")
+print("7. Exit")
+
+
+def menu():
+    print("Add")
+    print("Insert")
+    print("Modify")
+    print("Delete")
+    print("Ascending Order")
+    print("Descending Order")
+    print("Exit")
+
+def add(x):
+    return x
+
+def insert(x):
+    return x
+
+def modify(x):
+    return x
+
+def delete(x):
+    return x
+
+def ascend(x):
+    return x
+
+def descend(x):
+    return x
+
+def exit():
+    print("Thank you for using the program!")
+
+
+while True:
+
+    choice = int(input("Enter your option: "))
+    if choice == 1:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        edited_list = int(input("Enter an element you want to add: "))
+        add_element = list.append(edited_list)
+        print("The element has been added \n This is the new array: ", list)
+
+    elif choice == 2:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        edited_list = int(input("Enter an element you want to insert: "))
+        insert_element = list.insert(0, edited_list)
+        print("The element has been inserted \n This is the new array: ", list)
+
+    elif choice == 3:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        edited_list = int(input("Enter the index you want to change: "))
+        modified_list = int(input("Enter the element you want to change it with: "))
+        list[edited_list] = modified_list
+        print("The element has been modified \n This is the new array: ", list)
+
+    elif choice == 4:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        edited_list = int(input("Enter the index you want to delete: "))
+        del list[edited_list]
+        print("The element has been deleted \n This is the new array: ", list)
+
+    elif choice == 5:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        list.sort()
+        print("The elements have been arranged in ascending order \n This is the new array: ", list)
+
+    elif choice == 6:
+        list = [1, 4, 3, 4, 4, 5, 6, 2, 56, 200]
+        list.sort(reverse=True)
+        print("The elements have been arranged in descending order \n This is the new array: ", list)
+
+    elif choice == 7:
+        exit()
+        break
+    else:
+        print("That is not a valid option.")
+
+    answer = input("Do you want to try again? yes/no: ")
+    if answer == "yes":
+        continue
+    else:
+        print("Thank you for using the program!")
+        break
+
+
